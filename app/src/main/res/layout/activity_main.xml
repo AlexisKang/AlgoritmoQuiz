@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+    
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-52dp" />
+
+    <include
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="380dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBackground"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/botao_menu_principal"
+        android:drawableLeft="@drawable/ic_jogar"
+        android:paddingLeft="9dp"
+        android:paddingRight="50dp"
+        android:text="JOGAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <Button
+        android:id="@+id/btnScore"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/botao_menu_principal"
+        android:text="SCORE"
+        android:drawableLeft="@drawable/ic_score"
+        android:paddingLeft="11dp"
+        android:paddingRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSobrevivencia" />
+
+    <Button
+        android:id="@+id/btnSobrevivencia"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/botao_menu_principal"
+        android:text="SOBREVIVÊNCIA"
+        android:paddingLeft="8dp"
+        android:paddingRight="50dp"
+        android:drawableLeft="@drawable/ic_sobrevivencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJogar" />
+
+    <Button
+        android:id="@+id/btnConfiguracao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="CONFIGURAÇÃO"
+        android:paddingLeft="8dp"
+        android:paddingRight="50dp"
+        android:drawableLeft="@drawable/ic_setting"
+        android:background="@drawable/botao_menu_principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
